@@ -45,6 +45,13 @@
 </template>
 
 <script>
+
+
+/* PARA A LISTAGEM EU FIZ A REQUISIÇÃO POST E DEIXEI TODAS AS FUNÇÕES DE FORMATAÇÃO PARA QUE OS DADOS EXIBIDOS
+ANTERIORMENTE TAMBÉM PUDESSEM SER EXIBIDOS DE FORMA CORRETA*/
+
+
+
 import axios from 'axios'
 import Loader from '../components/Loader.vue'
 import Modal from '../components/Modal.vue'

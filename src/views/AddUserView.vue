@@ -85,6 +85,13 @@
 </template>
 
 <script>
+
+
+/*O TEMPLATE DE ADIÇÃO DE USUÁRIO É BASICAMENTE UM FORMULÁRIO ATRELADO A UMA VARIÁVEL FORM VIA V-MODEL.
+UMA VEZ PREENCHIDO, RODAMOS AS DEVIDAS VERIFICAÇÕES E FORMATAÇÕES E ENVIAMOS NO CORPO DA REQUISIÇÃO POST*/
+
+
+
 import axios from 'axios'
 import Modal from '../components/Modal.vue'
 export default {

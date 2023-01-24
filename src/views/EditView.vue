@@ -1,4 +1,5 @@
 <template>
+
     <form v-if="!loading" @submit.prevent="openModal" class="bg-white p-5 rounded-md">
         <h2 class="text-3xl font-bold mb-4 text-[#01487e]">Editar Usuário</h2>
         <div class="shadow-lg rounded-lg p-5 max-w-4xl">
@@ -86,6 +87,13 @@
 </template>
 
 <script>
+
+/*O FORMULÁRIO DE EDIÇÃO É SEMELHANTE AO DE ADIÇÃO, A UNICA DIFERENÇA FICA NA REQUISIÇÃO, ONDE EU PRECISO FILTRAR OS
+DADOS PARA PEGAR APENAS O SELECIONADO PARA EXIBIR OS DADOS
+NAS VALIDAÇÕES EU APENAS RETIREI A VALIDAÇÃO PARA VERIFICAR SE O NÚMERO FOI ESCRITO APENAS COM NÚMEROS, UMA
+VEZ QUE ELE JÁ VEM FORMATADO.
+PORÉM, NO ENVIO, ELE É REFORMATADO PARA ASSEGURAR QUE A INFORMAÇÃO ESTÁ INDO DA FORMA CORRETA*/
+
 import axios from 'axios'
 import Loader from '../components/Loader.vue'
 import Modal from '../components/Modal.vue'

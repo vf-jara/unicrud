@@ -9,12 +9,10 @@
 
 <script>
 import Button from "./Button.vue"
-import Search from "./Search.vue"
 
 export default {
     components: {
         Button,
-        Search
     },
 }
 </script>
